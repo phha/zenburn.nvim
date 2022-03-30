@@ -1,5 +1,3 @@
-local c = require("zenburn.palette")
-
 return {
     Boolean = { fg="#dca3a3" },
     Character = { fg="#dca3a3", bold=true },
@@ -7,6 +5,9 @@ return {
     Conditional = { fg="#f0dfaf", bold=true },
     Constant = { fg="#dca3a3", bold=true },
     Cursor = { fg="#000d18", bg="#8faf9f", bold=true },
+    vCursor = { fg="#000d18", bg="#8faf9f", bold=true },
+    iCursor = { fg="#000d18", bg="#8faf9f", bold=true },
+    lCursor = { fg="#000d18", bg="#8faf9f", bold=true },
     Debug = { fg="#bca3a3", bold=true },
     Define = { fg="#ffcfaf", bold=true },
     Delimiter = { fg="#8f8f8f" },
@@ -42,7 +43,9 @@ return {
     SpecialKey = { fg="#9ece9e" },
     Statement = { fg="#e3ceab"  },
     StatusLine = { fg="#3f3f3f", bg="#9da4af" },
+    StatusLineTerm = { fg="#3f3f3f", bg="#9da4af" },
     StatusLineNC = { fg="#2e3330", bg="#88b090" },
+    StatusLineTermNC = { fg="#2e3330", bg="#88b090" },
     StorageClass = { fg="#c3bf9f", bold=true },
     String = { fg="#cc9393" },
     Structure = { fg="#efefaf", bold=true },
@@ -59,6 +62,8 @@ return {
     SpellRare = { sp="#bc6c9c", fg="#bc8cbc" },
     SpellLocal = { sp="#7cac7c", fg="#9ccc9c" },
     Normal = { fg="#dcdccc", bg="#3f3f3f" },
+    EndOfBuffer = { fg="#dcdccc", bg="#383838" },
+    Terminal = { fg="#dcdccc", bg="#3f3f3f" },
     Conceal = { fg="#8f8f8f", bg="#484848" },
     ColorColumn = { bg="#484848" },
     CursorLine = { bg= "#434443" },
@@ -66,7 +71,7 @@ return {
     CursorColumn = { bg="#434343" },
     LineNr = { fg="#5d6262", bg="#353535" },
     NonText = { fg="#5b605e", bold=true },
-    Pmenu = { bg="#2c2e2e", fg="#9f9f9f" },
+    Pmenu = { bg="#383838", fg="#9f9f9f" },
     PmenuSel = { bg="#242424", fg="#d0d0a0", bold=true },
     MatchParen = { fg="#b2b2a0", bg="#2e2e2e", bold=true },
     TabLine = { fg="#d0d0b8", bg="#222222", bold=true },
