@@ -70,7 +70,8 @@ return {
 	Typedef = { fg="#dfe4cf", bold=true, },
 	Underlined = { fg="#dcdccc", underline=true, },
 	VertSplit = { fg="#dfaf8f", bg="#3f3f3f", },
-	VisualNOS = { fg="#333333", bg="#f18c96", bold=true, underline=true, },
+	Visual = { bg="#233323" },
+	VisualNOS = { bg="#233323" },
 	WarningMsg = { fg="#ffffff", bg="#333333", bold=true, },
 	WildMenu = { bg="#2c302d", fg="#cbecd0", underline=true, },
 }
