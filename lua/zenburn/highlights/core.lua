@@ -44,7 +44,7 @@ return {
 	Question = { fg="#ffffff", bold=true, },
 	Repeat = { fg="#ffd7a7", bold=true, },
 	Search = { fg="#ffffe0", bg="#284f28", },
-	SignColumn = { fg="#9fafaf", bg="#343434", bold=true, },
+	SignColumn = { fg="#3f3f3f", bold=true, },
 	Special = { fg="#cfbfaf", },
 	SpecialChar = { fg="#dca3a3", bold=true, },
 	SpecialComment = { fg="#82a282", bold=true, },
