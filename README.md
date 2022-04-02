@@ -28,8 +28,8 @@ Plug "phha/zenburn.nvim"
 
 ```lua
 use {
-	"phha/zenburn.nvim",
-	config = function() require("zenburn").setup() end
+    "phha/zenburn.nvim",
+    config = function() require("zenburn").setup() end
 }
 ```
 
@@ -37,7 +37,7 @@ use {
 
 ```lua
 require("paq") {
-	"phha/zenburn.nvim";
+    "phha/zenburn.nvim";
 }
 ```
 
