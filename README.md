@@ -44,16 +44,26 @@ require("paq") {
 Setup
 -----
 
-With VimScript
+With VimScript:
 
 ```vim
 colorscheme zenburn
 ```
 
-With lua
+With lua:
 
 ```lua
 require("zenburn").setup()
+```
+
+To set the theme in lualine:
+
+```lua
+require("lualine").setup {
+    options = {
+        theme = "zenburn",
+    }
+}
 ```
 
 Plugin Support
