@@ -11,13 +11,53 @@ The aim of this port is to bring Zenburn into the modern age, with support for
 [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) and many
 more plugins.
 
-Screenshot
-----------
-
 ![Screenshot 1](images/screenshot01.png)
 
-Plugins
--------
+Installation
+------------
+
+Using your favorite package manager:
+
+[vim-plug](https://github.com/junegunn/vim-plug)
+
+```vim
+Plug "phha/zenburn.nvim"
+```
+
+[packer](https://github.com/wbthomason/packer.nvim)
+
+```lua
+use {
+	"phha/zenburn.nvim",
+	config = function() require("zenburn").setup() end
+}
+```
+
+[paq](https://github.com/savq/paq-nvim)
+
+```lua
+require("paq") {
+	"phha/zenburn.nvim";
+}
+```
+
+Setup
+-----
+
+With VimScript
+
+```vim
+colorscheme zenburn
+```
+
+With lua
+
+```lua
+require("zenburn").setup()
+```
+
+Plugin Support
+--------------
 
 The following plugins are currently supported:
 
@@ -31,7 +71,7 @@ The following plugins are currently supported:
 Status
 ------
 
-I consider this software to be in *Alpha* status. The core colors are basically
+I consider this software to be in *Alpha*. The core colors are basically
 a straight port from the original Zenburn theme for vim, so I don't expect any
 major issues. However, the plugin schemes are not widely tested yet and subject
 to changes.
