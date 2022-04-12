@@ -77,6 +77,7 @@ The following plugins are currently supported:
 * [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 * [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
 * [symbols-outline](https://github.com/simrat39/symbols-outline.nvim)
+* [trouble](https://github.com/folke/trouble.nvim)
 
 Status
 ------

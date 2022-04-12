@@ -8,9 +8,6 @@ local set_hl = vim.api.nvim_set_hl
 local set_hl_ns = vim.api.nvim__set_hl_ns or vim.api.nvim_set_hl_ns
 local ns = vim.api.nvim_create_namespace(M.name)
 
--- package.path = package.path .. ";./lua/?.lua;./lua/?/init.lua"
-
-
 M.set_highlights = function(highlights)
     for group, highlight in pairs(highlights) do
     	set_hl(ns, group, highlight)
