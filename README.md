@@ -78,6 +78,7 @@ The following plugins are currently supported:
 * [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
 * [symbols-outline](https://github.com/simrat39/symbols-outline.nvim)
 * [trouble](https://github.com/folke/trouble.nvim)
+* [which-key](https://github.com/folke/which-key.nvim)
 
 Status
 ------

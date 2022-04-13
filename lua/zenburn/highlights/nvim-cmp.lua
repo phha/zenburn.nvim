@@ -1,10 +1,10 @@
 local c = require("zenburn.palette")
 return {
-	-- CmpItemAbbr = c.Pmenu,
-	-- CmpItemAbbrMatch = { fg=c.Number.fg, bg=c.Pmenu.bg },
-	-- CmpItemAbbrMatchFuzzy = { fg=c.Number.fg, bg=c.Pmenu.bg },
+	CmpItemAbbrMatch = { fg=c.Number.fg },
+	CmpItemAbbrMatchFuzzy = { fg=c.Number.fg },
+	CmpItemKind = { fg=c.Delimiter.fg },
+	-- CmpItemKindDefault = { fg=c.Keyword.fg },
 	-- CmpItemMenu = c.Pmenu,
-	-- CmpItemKind = c.Pmenu,
 	-- CmpItemKindDefault = c.Pmenu,
 	-- NormalFloat = c.Pmenu,
 }
