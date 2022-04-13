@@ -34,7 +34,7 @@ return {
 	MoreMsg = { fg="#ffffff", bold=true, },
 	NonText = { fg="#5b605e", bold=true, },
 	Normal = { fg="#dcdccc", bg="#3f3f3f", },
-	NormalFloat = { bg="#2c2e2e", fg="#9f9f9f", },
+	NormalFloat = { bg="#353535", fg="#9f9f9f", },
 	Number = { fg="#8cd0d3", },
 	Operator = { fg="#f0efd0", },
 	PmenuSel = { bg="#242424", fg="#d0d0a0", bold=true, },
