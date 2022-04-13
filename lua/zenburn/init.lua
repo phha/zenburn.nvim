@@ -6,36 +6,42 @@ M.name = "zenburn.nvim"
 
 local set_hl = vim.api.nvim_set_hl
 local set_hl_ns = vim.api.nvim__set_hl_ns or vim.api.nvim_set_hl_ns
-local ns = vim.api.nvim_create_namespace(M.name)
+-- Using the standard namespace for now, since a custom namespace
+-- causes weird behaviour in popups like for example in nvim-cmp
+-- and which-key
+-- local ns = vim.api.nvim_create_namespace(M.name)
+local ns = 0
 
 M.set_highlights = function(highlights)
-    for group, highlight in pairs(highlights) do
-    	set_hl(ns, group, highlight)
-    end
-
-    set_hl_ns(ns)
+	for group, highlight in pairs(highlights) do
+		set_hl(ns, group, highlight)
+	end
 end
 
 function M.clear_namespace()
-    vim.api.nvim_buf_clear_namespace(0, ns, 0, -1)
-    set_hl_ns(0)
+	vim.api.nvim_buf_clear_namespace(0, ns, 0, -1)
+	set_hl_ns(0)
 end
 
 M.setup = function()
-    vim.cmd("hi clear")
-    if vim.fn.exists("syntax_on") then
-        vim.cmd("syntax reset")
-    end
-    vim.o.background = "dark"
-    vim.o.termguicolors = true
-    local all_highlights = require("zenburn.highlights")
+	vim.cmd("hi clear")
+	M.clear_namespace()
+	if vim.fn.exists("syntax_on") then
+		vim.cmd("syntax reset")
+	end
+	vim.o.background = "dark"
+	local c = require("zenburn.palette")
+	vim.o.termguicolors = true
+	vim.cmd("hi PMenu guifg=" .. c.Pmenu.fg .. " guibg=" .. c.Pmenu.bg)
+	local all_highlights = require("zenburn.highlights")
 
-    for _, highlights in ipairs(all_highlights) do
-	M.set_highlights(highlights)
-    end
+	for _, highlights in ipairs(all_highlights) do
+		M.set_highlights(highlights)
+	end
+	set_hl_ns(ns)
 
-    vim.g.colors_name = M.name
-    vim.cmd([[au ColorSchemePre * lua require("zenburn").clear_namespace()]])
+	vim.g.colors_name = M.name
+	vim.cmd([[au ColorSchemePre * lua require("zenburn").clear_namespace()]])
 end
 
 return M

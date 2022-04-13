@@ -7,4 +7,6 @@ return {
     require("zenburn.highlights.treesitter"),
     require("zenburn.highlights.symbols-outline"),
     require("zenburn.highlights.trouble"),
+    require("zenburn.highlights.nvim-cmp"),
+    require("zenburn.highlights.which-key"),
 }
