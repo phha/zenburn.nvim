@@ -10,4 +10,5 @@ return {
     require("zenburn.highlights.nvim-cmp"),
     require("zenburn.highlights.which-key"),
     require("zenburn.highlights.leap"),
+    require("zenburn.highlights.gitsigns"),
 }

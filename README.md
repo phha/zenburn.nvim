@@ -69,7 +69,7 @@ require("lualine").setup {
 Plugin Support
 --------------
 
-The following plugins are currently supported:
+Zenburn features custom highlighting for these plugins:
 
 * [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 * [lualine](https://github.com/nvim-lualine/lualine.nvim)
@@ -80,14 +80,14 @@ The following plugins are currently supported:
 * [trouble](https://github.com/folke/trouble.nvim)
 * [which-key](https://github.com/folke/which-key.nvim)
 * [leap](https://github.com/ggandor/leap.nvim)
+* [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 
 Status
 ------
 
-I consider this software to be in *Alpha*. The core colors are basically
-a straight port from the original Zenburn theme for vim, so I don't expect any
-major issues. However, the plugin schemes are not widely tested yet and subject
-to changes.
+Zenburn is in *Alpha* status. The core colors are basically a straight port
+from the original Zenburn theme for vim, so there shouldn't be major issues.
+However, the plugin schemes are not widely tested yet and subject to changes.
 
 Contributing
 ------------
