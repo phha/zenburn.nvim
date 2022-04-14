@@ -79,6 +79,7 @@ The following plugins are currently supported:
 * [symbols-outline](https://github.com/simrat39/symbols-outline.nvim)
 * [trouble](https://github.com/folke/trouble.nvim)
 * [which-key](https://github.com/folke/which-key.nvim)
+* [leap](https://github.com/ggandor/leap.nvim)
 
 Status
 ------
