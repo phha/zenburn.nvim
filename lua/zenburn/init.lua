@@ -24,15 +24,13 @@ function M.clear_namespace()
 end
 
 M.setup = function()
-	vim.cmd("hi clear")
+	-- vim.cmd("hi clear")
 	M.clear_namespace()
-	if vim.fn.exists("syntax_on") then
-		vim.cmd("syntax reset")
-	end
+	-- if vim.fn.exists("syntax_on") then
+	-- 	vim.cmd("syntax reset")
+	-- end
 	vim.o.background = "dark"
-	local c = require("zenburn.palette")
 	vim.o.termguicolors = true
-	vim.cmd("hi PMenu guifg=" .. c.Pmenu.fg .. " guibg=" .. c.Pmenu.bg)
 	local all_highlights = require("zenburn.highlights")
 
 	for _, highlights in ipairs(all_highlights) do
@@ -41,7 +39,7 @@ M.setup = function()
 	set_hl_ns(ns)
 
 	vim.g.colors_name = M.name
-	vim.cmd([[au ColorSchemePre * lua require("zenburn").clear_namespace()]])
+	-- vim.cmd([[au ColorSchemePre * lua require("zenburn").clear_namespace()]])
 end
 
 return M
