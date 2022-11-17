@@ -11,4 +11,5 @@ return {
     require("zenburn.highlights.which-key"),
     require("zenburn.highlights.leap"),
     require("zenburn.highlights.gitsigns"),
+    require("zenburn.highlights.hydra"),
 }

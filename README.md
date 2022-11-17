@@ -81,6 +81,7 @@ Zenburn features custom highlighting for these plugins:
 * [which-key](https://github.com/folke/which-key.nvim)
 * [leap](https://github.com/ggandor/leap.nvim)
 * [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+* [hydra](https://github.com/anuvyklack/hydra.nvim)
 
 Status
 ------
