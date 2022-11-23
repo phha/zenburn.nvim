@@ -84,13 +84,6 @@ Zenburn features custom highlighting for these plugins:
 * [hydra](https://github.com/anuvyklack/hydra.nvim)
 * [neotest](https://github.com/nvim-neotest/neotest)
 
-Status
-------
-
-Zenburn is in *Alpha* status. The core colors are basically a straight port
-from the original Zenburn theme for vim, so there shouldn't be major issues.
-However, the plugin schemes are not widely tested yet and subject to changes.
-
 Contributing
 ------------
 
