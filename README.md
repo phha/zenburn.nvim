@@ -101,9 +101,11 @@ No
 * headache
 * watery, squinting eyes
 * the "I wanna run away" feeling
+* vimL
 
 Yes
 ---
 * alien fruit salad
 * harmonious colors help with concentration
 * improved focus
+* Lua
