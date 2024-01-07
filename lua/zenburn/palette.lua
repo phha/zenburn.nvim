@@ -76,6 +76,7 @@ return {
 	VisualNOS = { bg="#233323" },
 	WarningMsg = { fg="#ffffff", bg="#333333", bold=true, },
 	WildMenu = { bg="#2c302d", fg="#cbecd0", underline=true, },
+	WinSeparator = { fg="#dfaf8f", bg="#3f3f3f", },
 }
 
 
