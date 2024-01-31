@@ -29,7 +29,7 @@ return {
 	Keyword = { fg="#f0dfaf", bold=true, },
 	Label = { fg="#dfcfaf", underline=true, },
 	LineNr = { fg="#5d6262", bg="#353535" },
-  LspInlayHint = { fg="#ffcfaf", },
+	LspInlayHint = { fg="#ffcfaf", },
 	Macro = { fg="#ffcfaf", bold=true, },
 	MatchParen = { fg="#b2b2a0", bg="#2e2e2e", bold=true, },
 	ModeMsg = { fg="#ffcfaf", },
